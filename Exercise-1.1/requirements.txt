@@ -1,0 +1,12 @@
+ipython==8.12.3
+jedi==0.19.1
+matplotlib-inline==0.1.7
+pexpect==4.9.0
+pickleshare==0.7.5
+prompt_toolkit==3.0.47
+Pygments==2.18.0
+stack-data==0.6.3
+traitlets==5.14.3
+typing_extensions==4.12.2
+wcwidth==0.2.13
+
