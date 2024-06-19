@@ -1,0 +1,33 @@
+In [7]: # Define string 1
+   ...: str1 = 'hello, '
+   ...: 
+   ...: # Define string 2
+   ...: str2 = 'how are you?'
+   ...: 
+   ...: # Combine strings using concatenation (+) and store in str3
+   ...: str3 = str1 + str2
+   ...: 
+   ...: # Print substring starting from index 3 (excluding index 3)
+   ...: print(str3[3:])  # Output: 'o, how are you?'
+   ...: 
+   ...: # Print the last 3 characters (including the last character)
+   ...: print(str3[-3:])  # Output: 'you?'
+   ...: 
+   ...: # Print characters with a step of 3, starting from index 2 (including index 2) and ending before index 9
+   ...: print(str3[2:9:3])  # Output: 'lo ,' (it takes 'l', ' ', and 'o')
+   ...: 
+   ...: # Print the string in reverse order (using step -1)
+   ...: print(str3[::-2])  # Output: '!uoy ,ow ,olleh' (it takes every other character in reverse order)
+   ...: 
+   ...: # Print substring from index 2 (including index 2) to index 8 (excluding index 8)
+   ...: print(str3[2:8])  # Output: 'llo, ho'
+   ...: 
+
+   
+lo, how are you?
+ou?
+l,o
+?o r o olh
+llo, h
+
+In [8]: 
