@@ -35,3 +35,23 @@
 
 - **Recipe Data Structure**: A dictionary was chosen to store recipe information because it allows for easy mapping of attribute names (keys) to their values (e.g., 'name', 'cooking_time', 'ingredients').
 - **All Recipes Structure**: A list was chosen to store multiple recipes because it allows for easy sequential access and modification of recipes.
+
+---
+
+# Exercise 1.3: Operators & Functions in Python
+
+## Files
+
+- `name_capitalizer.py`: Script to capitalize the user's first and last name.
+- `add.py`: Script to add two numbers entered by the user.
+- Screenshots: Documenting each step of the exercise.
+- Learning Journal: Notes on my learning and coding experience.
+
+## Steps
+
+1. Created a script to capitalize the user's first and last name.
+2. Created a script to add two numbers entered by the user.
+3. Implemented conditional statements for addition and subtraction.
+4. Used loops to print the top three scores from a list of test scores.
+5. Defined functions and explored their usage.
+6. Developed a recipe app with difficulty level calculation.
