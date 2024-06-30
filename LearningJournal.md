@@ -63,3 +63,26 @@
 - Defining and using custom functions with various arguments.
 - Managing variable scopes and understanding local vs global variables.
 - Developing a recipe app with difficulty level calculation.
+
+---
+
+## Exercise 1.4: File Handling in Python
+
+### Observations
+
+- Learned how to read from and write to text files.
+- Explored binary files and the pickle module for handling complex data structures.
+- Understood the importance of file handling for data persistence.
+
+### Challenges
+
+- Faced issues with file paths and file modes but resolved them through practice.
+- Had to carefully manage binary data and ensure correct data serialization and deserialization.
+
+### What I've Learned
+
+- Basics of file handling in Python, including reading from and writing to text files.
+- Using the pickle module to serialize and deserialize complex data structures.
+- Navigating directories and handling file paths using the os module.
+- Implementing error handling using try-except blocks to create robust programs.
+- Developing a recipe management app that can store and search recipes using binary files.

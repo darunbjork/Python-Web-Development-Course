@@ -55,3 +55,25 @@
 4. Used loops to print the top three scores from a list of test scores.
 5. Defined functions and explored their usage.
 6. Developed a recipe app with difficulty level calculation.
+
+---
+
+# Exercise 1.4: File Handling in Python
+
+## Files
+
+- `write_numbers.py`: Script to write numbers from 50 to 100 to a text file.
+- `number_list.txt`: Text file containing numbers from 50 to 100.
+- `tea_store_recipe.py`: Script to store and load a tea recipe using pickle.
+- `recipe_input.py`: Script to input and store recipes in a binary file.
+- `recipe_search.py`: Script to search recipes by ingredients from a binary file.
+- Screenshots: Documenting each step of the exercise.
+- Learning Journal: Notes on my learning and coding experience.
+
+## Steps
+
+1. Created `write_numbers.py` to write numbers from 50 to 100 to `number_list.txt`.
+2. Created `tea_store_recipe.py` to store a tea recipe in a binary file and load it back.
+3. Created `recipe_input.py` to input and store recipes in a binary file.
+4. Created `recipe_search.py` to search recipes by ingredients from the binary file.
+5. Verified the functionality of all scripts and documented each step.
