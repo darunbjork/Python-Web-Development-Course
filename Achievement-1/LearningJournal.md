@@ -90,8 +90,61 @@ I created the `README.md` and `LearningJournal.md` files to document my progress
 ### Challenges and Solutions
 
 - **Issue**: Encountered a "FileNotFoundError" while running the compound interest script.
-
   - **Solution**: Ensured the `codepractice1.txt` file was created and in the correct directory before running the script.
-
 - **Issue**: Had difficulty with tuples and slicing operations initially.
   - **Solution**: Reviewed Python documentation and examples to better understand these concepts.
+
+---
+
+## Exercise 1.3: Operators & Functions in Python
+
+### Observations
+
+- Learned how to implement conditional statements in Python to determine program flow.
+- Used loops to reduce time and effort in Python programming.
+- Wrote functions to organize Python code.
+
+### Challenges
+
+- Faced issues with understanding nested loops, but resolved them through practice.
+- Had to carefully manage variable scopes to avoid conflicts.
+
+### What I've Learned
+
+- How to use if-else statements, for loops, and while loops in Python.
+- How to define and call functions with and without arguments.
+- How to use list comprehensions for concise code.
+
+### Detailed Steps
+
+1. **Creating `name_capitalizer.py`**:
+   - Created a script to capitalize the user's first and last name.
+2. **Creating `add.py`**:
+   - Created a script to add two user-provided numbers.
+3. **If-Else Statements**:
+   - Created `if_else_operations.py` to perform addition or subtraction based on user input.
+4. **For Loops**:
+   - Created `top_scores.py` to sort and print the top three test scores.
+5. **While Loops**:
+   - Created `while_loop_numbers.py` to print numbers from 5 to 10.
+6. **Functions**:
+   - Created `recipe_app.py` to manage recipes and calculate their difficulty.
+
+### Practice Tasks
+
+1. **Practice Task 1**:
+   - Used if-else statements to perform operations based on user input.
+2. **Practice Task 2**:
+   - Used for loops to sort and print the top three scores.
+3. **Practice Task 3**:
+   - Used while loops to print numbers in a range.
+
+### Documentation and Deployment
+
+- Documented my progress in the `README.md` and `LearningJournal.md` files.
+- Ensured that all necessary packages are listed in the `requirements.txt` file and can be easily installed in a new virtual environment.
+
+### Challenges and Solutions
+
+- **Issue**: Faced issues with variable scope in nested functions.
+  - **Solution**: Reviewed Python documentation on scopes and implemented global variables as needed.
