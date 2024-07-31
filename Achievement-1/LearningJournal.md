@@ -148,3 +148,59 @@ I created the `README.md` and `LearningJournal.md` files to document my progress
 
 - **Issue**: Faced issues with variable scope in nested functions.
   - **Solution**: Reviewed Python documentation on scopes and implemented global variables as needed.
+
+---
+
+# Learning Journal
+
+## Exercise 1.4: File Handling in Python
+
+### Observations
+
+- Learned how to work with files in Python for reading and writing data.
+- Understood the difference between text files and binary files.
+- Explored pickling to store complex data structures.
+- Practiced error handling using try-except blocks.
+
+### Challenges
+
+- Encountered issues with handling file paths and navigating directories.
+- Faced difficulties in understanding the nuances of binary file handling and pickling.
+
+### What I've Learned
+
+- Basics of file handling in Python, including reading and writing to text files.
+- How to use the `pickle` module to work with binary files.
+- Techniques for handling errors and exceptions to make scripts more robust.
+- Navigating directories and handling file operations using the `os` module.
+
+### Detailed Steps
+
+1. **File Reading and Writing**:
+   - Created `number_list.py` to write a list of numbers to a text file.
+2. **Binary File Handling**:
+   - Created `recipe_binary.py` to store and retrieve a recipe dictionary using pickling.
+3. **Managing Recipes**:
+   - Created `recipe_input.py` to take recipes from the user and store them in a binary file.
+   - Created `recipe_search.py` to search for recipes by ingredient from the binary file.
+4. **Error Handling**:
+   - Implemented error handling in file operations to manage file not found errors and other exceptions.
+
+### Practice Tasks
+
+1. **Practice Task 1**:
+   - Created `number_list.py` to practice writing a list of numbers to a text file.
+2. **Practice Task 2**:
+   - Created `recipe_binary.py` to practice binary file handling using the `pickle` module.
+
+### Documentation and Deployment
+
+- Documented progress in the `README.md` and `LearningJournal.md` files.
+- Ensured that all necessary packages are listed in the `requirements.txt` file and can be easily installed in a new virtual environment.
+
+### Challenges and Solutions
+
+- **Issue**: Encountered a "FileNotFoundError" while accessing a file.
+  - **Solution**: Implemented try-except blocks to handle the error and provide user-friendly prompts.
+- **Issue**: Had difficulty understanding pickling.
+  - **Solution**: Reviewed Python documentation and examples to better understand pickling and binary file handling.

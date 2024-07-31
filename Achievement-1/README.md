@@ -83,3 +83,75 @@ workon cf-python-base
 
 Install the packages:
 pip install -r requirements.txt
+
+---
+
+**Exercise 1.4**: File Handling in Python
+
+- **Practice-Task-1**:
+  - `number_list.py`: Script to write a list of numbers to a text file.
+  - `number_list.txt`: Generated text file containing numbers.
+- **Practice-Task-2**:
+  - `recipe_binary.py`: Script to store and retrieve a recipe dictionary using pickling.
+  - `recipe_binary.bin`: Generated binary file containing pickled recipes.
+- **Main-Task**:
+  - `recipe_input.py`: Script to take recipes from the user and store them in a binary file.
+  - `recipe_search.py`: Script to search for recipes by ingredient from the binary file.
+
+## Virtual Environment Setup
+
+To set up the virtual environment and install required packages, follow these steps:
+
+1. Create a virtual environment:
+   ```bash
+   mkvirtualenv cf-python-base
+   Activate the virtual environment:
+   workon cf-python-base
+   ```
+
+Install required packages:
+pip install requests==2.26.0 numpy==1.21.2
+
+Running the Scripts
+
+Activate the virtual environment:
+workon cf-python-base
+
+Run the scripts:
+To run add.py:
+python add.py
+
+To run apple.py:
+python apple.py
+
+To run calculator.py:
+python calculator.py
+
+To run number_list.py (in Practice-Task-1):
+
+cd Exercise-1.4/Practice-Task-1
+python number_list.py
+
+To run recipe_binary.py (in Practice-Task-2):
+cd Exercise-1.4/Practice-Task-2
+python recipe_binary.py
+
+To run recipe_input.py (in Main-Task):
+cd Exercise-1.4/Main-Task
+python recipe_input.py
+
+To run recipe_search.py (in Main-Task):
+cd Exercise-1.4/Main-Task
+python recipe_search.py
+Requirements
+
+All the necessary packages are listed in the requirements.txt file. To install them in a new virtual environment:
+
+Create a new virtual environment:
+mkvirtualenv cf-python-base
+
+Activate the virtual environment:
+workon cf-python-base
+
+Install the packages:
+pip install -r requirements.txt
