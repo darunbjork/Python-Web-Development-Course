@@ -204,3 +204,60 @@ I created the `README.md` and `LearningJournal.md` files to document my progress
   - **Solution**: Implemented try-except blocks to handle the error and provide user-friendly prompts.
 - **Issue**: Had difficulty understanding pickling.
   - **Solution**: Reviewed Python documentation and examples to better understand pickling and binary file handling.
+
+---
+
+## Exercise 1.5: Object-Oriented Programming in Python
+
+### Observations
+
+- Learned the basics of Object-Oriented Programming (OOP) in Python.
+- Understood how to create and use classes and objects.
+- Explored the concepts of inheritance, polymorphism, and operator overloading.
+- Practiced writing custom methods and handling class variables.
+
+### Challenges
+
+- Initially struggled with understanding inheritance and polymorphism.
+- Faced difficulties in implementing comparison operators and operator overloading.
+
+### What I've Learned
+
+- How to create classes and define data and procedural attributes.
+- Implementing getter and setter methods.
+- Using inheritance to create a hierarchy of classes.
+- Operator overloading and defining custom operators.
+- Polymorphism and using methods with the same name in different classes.
+
+### Detailed Steps
+
+1. **Custom Methods**:
+   - Created `shopping_list.py` to manage a shopping list using custom methods in a class.
+2. **Operator Overloading**:
+   - Created `height_operations.py` to demonstrate addition and subtraction of height objects.
+3. **Comparison Operators**:
+   - Created `height_comparison.py` to implement and test comparison operators for height objects.
+4. **Recipe App**:
+   - Created `recipe_oop.py` to build a Recipe app using OOP concepts.
+   - Defined a Recipe class with methods to add ingredients, calculate difficulty, and search for recipes.
+
+### Practice Tasks
+
+1. **Practice Task 1**:
+   - Created `shopping_list.py` to practice custom methods in a class.
+2. **Practice Task 2**:
+   - Created `height_operations.py` to practice operator overloading.
+3. **Practice Task 3**:
+   - Created `height_comparison.py` to practice comparison operators.
+
+### Documentation and Deployment
+
+- Documented progress in the `README.md` and `LearningJournal.md` files.
+- Ensured all necessary packages are listed in the `requirements.txt` file and can be easily installed in a new virtual environment.
+
+### Challenges and Solutions
+
+- **Issue**: Struggled with understanding inheritance.
+  - **Solution**: Reviewed examples and practiced by creating a hierarchy of classes.
+- **Issue**: Difficulty in implementing comparison operators.
+  - **Solution**: Practiced by defining and testing each comparison operator.

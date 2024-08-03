@@ -155,3 +155,89 @@ workon cf-python-base
 
 Install the packages:
 pip install -r requirements.txt
+
+---
+
+# Exercise 1.5: Object-Oriented Programming in Python
+
+## Overview
+
+This exercise focuses on Object-Oriented Programming (OOP) concepts in Python. It covers creating custom methods, operator overloading, comparison operators, and applying these concepts to a Recipe app.
+
+## Practice Tasks
+
+### Practice-Task-1
+
+- **shopping_list.py**: Script to create and manage a shopping list using custom methods in a class.
+  - Add, remove, and view items in the shopping list.
+
+### Practice-Task-2
+
+- **height_operations.py**: Script demonstrating operator overloading.
+  - Implement addition and subtraction for height objects in feet and inches.
+
+### Practice-Task-3
+
+- **height_comparison.py**: Script implementing comparison operators for height objects.
+  - Compare height objects using <, <=, ==, >, >=, != operators.
+
+## Main Task
+
+### Main-Task
+
+- **recipe_oop.py**: Object-oriented Recipe app.
+  - Create Recipe class with attributes and methods.
+  - Add and manage recipes.
+  - Search for recipes based on ingredients.
+
+## Virtual Environment Setup
+
+To set up the virtual environment and install required packages, follow these steps:
+
+1. Create a virtual environment:
+   mkvirtualenv cf-python-base
+
+Activate the virtual environment:
+workon cf-python-base
+
+Install required packages:
+pip install requests==2.26.0 numpy==1.21.2
+
+Running the Scripts
+
+Practice-Task-1:
+cd Exercise-1.5/Practice-Task-1
+nano shopping_list.py
+python shopping_list.py
+deactivate
+
+Practice-Task-2:
+cd Exercise-1.5/Practice-Task-2
+nano height_operations.py
+python height_operations.py
+deactivate
+
+Practice-Task-3:
+cd Exercise-1.5/Practice-Task-3
+nano height_comparison.py
+python height_comparison.py
+deactivate
+
+Main-Task:
+cd Exercise-1.5/Main-Task
+python recipe_oop.py
+nano recipe_oop.py
+deactivate
+
+Requirements
+
+All the necessary packages are listed in the requirements.txt file. To install them in a new virtual environment:
+
+Create a new virtual environment:
+mkvirtualenv cf-python-base
+
+Activate the virtual environment:
+workon cf-python-base
+
+Install the packages:
+pip install -r requirements.txt
