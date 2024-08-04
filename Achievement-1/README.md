@@ -241,3 +241,62 @@ workon cf-python-base
 
 Install the packages:
 pip install -r requirements.txt
+
+---
+
+### Exercise 1.6: Databases in Python
+
+**Files:**
+
+- **Practice-Task-1**:
+  - `setup_db.py`: Script to set up the database and user for the Recipe app.
+  - `requirements.txt`: Required packages for the task.
+- **Practice-Task-2**:
+  - `create_recipe.py`: Script to create and add recipes to the database.
+  - `requirements.txt`: Required packages for the task.
+- **Practice-Task-3**:
+  - `search_recipe.py`: Script to search for recipes by ingredient.
+  - `requirements.txt`: Required packages for the task.
+- **Main-Task**:
+  - `recipe_mysql.py`: Complete Recipe app using MySQL database.
+  - `requirements.txt`: Required packages for the task.
+  - `screenshots/`: Folder containing screenshots of the steps.
+    - `step_1.png`
+    - `step_2.png`
+    - `step_3.png`
+    - `step_4.png`
+
+## Virtual Environment Setup
+
+To set up the virtual environment and install required packages, follow these steps:
+
+1. Create a virtual environment:
+   mkvirtualenv cf-python-base
+
+Activate the virtual environment:
+workon cf-python-base
+
+Install required packages:
+pip install -r requirements.txt
+
+Running the Scripts
+Activate the virtual environment:
+workon cf-python-base
+
+Run the scripts:
+python script_name.py
+
+cd Exercise-1.6/Practice-Task-1
+python setup_db.py
+Requirements
+
+All the necessary packages are listed in the requirements.txt file. To install them in a new virtual environment:
+
+Create a new virtual environment:
+mkvirtualenv cf-python-base
+
+Activate the virtual environment:
+workon cf-python-base
+
+Install the packages:
+pip install -r requirements.txt

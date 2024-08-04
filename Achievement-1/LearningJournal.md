@@ -261,3 +261,60 @@ I created the `README.md` and `LearningJournal.md` files to document my progress
   - **Solution**: Reviewed examples and practiced by creating a hierarchy of classes.
 - **Issue**: Difficulty in implementing comparison operators.
   - **Solution**: Practiced by defining and testing each comparison operator.
+
+---
+
+## Exercise 1.6: Databases in Python
+
+### Observations
+
+- Learned how to set up and connect to a MySQL database using Python.
+- Explored basic SQL commands to create databases, users, and tables.
+- Practiced error handling when working with databases.
+
+### Challenges
+
+- Encountered issues with MySQL server not starting and managing permissions.
+- Faced difficulties in integrating SQL commands with Python scripts.
+
+### What I've Learned
+
+- Setting up and starting MySQL server.
+- Creating databases and users in MySQL.
+- Writing Python scripts to interact with MySQL database.
+- Implementing CRUD (Create, Read, Update, Delete) operations using SQL.
+
+### Detailed Steps
+
+1. **Setting up MySQL Server**:
+   - Started MySQL server and created a database and user.
+   - Implemented error handling for server start issues.
+2. **Practice Task 1**:
+   - Created `setup_db.py` to set up the database and user.
+3. **Practice Task 2**:
+   - Created `create_recipe.py` to add recipes to the database.
+4. **Practice Task 3**:
+   - Created `search_recipe.py` to search for recipes by ingredient.
+5. **Main Task**:
+   - Created `recipe_mysql.py` to implement a full CRUD Recipe app using MySQL.
+
+### Practice Tasks
+
+1. **Practice Task 1**:
+   - Created `setup_db.py` to practice setting up a database and user.
+2. **Practice Task 2**:
+   - Created `create_recipe.py` to practice adding recipes to the database.
+3. **Practice Task 3**:
+   - Created `search_recipe.py` to practice searching for recipes by ingredient.
+
+### Documentation and Deployment
+
+- Documented progress in the `README.md` and `LearningJournal.md` files.
+- Ensured all necessary packages are listed in the `requirements.txt` file and can be easily installed in a new virtual environment.
+
+### Challenges and Solutions
+
+- **Issue**: MySQL server not starting.
+  - **Solution**: Fixed permissions and ensured the correct path for MySQL server.
+- **Issue**: Difficulty in integrating SQL commands with Python scripts.
+  - **Solution**: Reviewed Python documentation on `mysql-connector` and practiced SQL commands.
