@@ -300,3 +300,67 @@ workon cf-python-base
 
 Install the packages:
 pip install -r requirements.txt
+
+---
+
+# Exercise 1.7: Recipe Manager Application
+
+## Overview
+
+In this exercise, I developed a Recipe Manager application using Python, SQLAlchemy, and MySQL. The application allows users to create, view, update, and delete recipes from a MySQL database. This exercise reinforced concepts related to database integration, SQLAlchemy ORM, and handling user inputs in Python.
+
+## Files
+
+### Practice-Task-1:
+
+- `setup_database.py`: Script to set up the database schema for the Recipe app using SQLAlchemy.
+
+### Practice-Task-2:
+
+- `create_recipe.py`: Script to create and add new recipes to the database.
+
+### Practice-Task-3:
+
+- `search_recipe.py`: Script to search for recipes by ingredients and perform CRUD operations.
+
+### Main-Task:
+
+- `recipe_manager.py`: Complete Recipe Manager application with functionalities to create, view, update, and delete recipes using SQLAlchemy and MySQL.
+
+## Virtual Environment Setup
+
+To set up the virtual environment and install the required packages, follow these steps:
+
+1. Create a virtual environment:
+
+   python3 -m venv env
+
+Activate the virtual environment:
+On macOS/Linux:
+source env/bin/activate
+
+On Windows:
+.\env\Scripts\activate
+
+Install the required packages:
+pip install -r requirements.txt
+
+Running the Scripts
+Activate the virtual environment:
+source env/bin/activate
+
+Run the scripts:
+python script_name.py
+
+Example:
+cd Practice-Task-1
+python setup_database.py
+
+Issues and Resolutions
+
+Issue: ModuleNotFoundError with setup_database
+
+Resolution: Ensured that the path to setup_database.py was correctly added to sys.path in all scripts, and the file was placed in the correct directory.
+
+Issue: Legacy Warnings in SQLAlchemy
+Resolution: Updated the SQLAlchemy code to use the Session.get() method and imported declarative_base from the recommended path.

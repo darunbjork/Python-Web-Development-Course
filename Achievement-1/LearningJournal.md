@@ -318,3 +318,62 @@ I created the `README.md` and `LearningJournal.md` files to document my progress
   - **Solution**: Fixed permissions and ensured the correct path for MySQL server.
 - **Issue**: Difficulty in integrating SQL commands with Python scripts.
   - **Solution**: Reviewed Python documentation on `mysql-connector` and practiced SQL commands.
+
+---
+
+# Exercise 1.7: Recipe Manager Application
+
+## Observations
+
+- Developed a full-featured Recipe Manager application using Python, SQLAlchemy, and MySQL.
+- Explored SQLAlchemy's ORM capabilities to interact with the MySQL database.
+- Implemented CRUD (Create, Read, Update, Delete) operations within the Recipe Manager application.
+
+## Challenges
+
+- Faced issues with setting up and connecting to the MySQL database.
+- Encountered warnings and deprecated features in SQLAlchemy 2.0.
+- Managed the integration of SQLAlchemy with MySQL, ensuring smooth database operations.
+
+## What I've Learned
+
+- How to define database models using SQLAlchemy's ORM.
+- Setting up and handling a MySQL database through Python scripts.
+- Writing Python functions to perform CRUD operations on a database.
+- Best practices for managing user inputs and ensuring data integrity.
+
+## Detailed Steps
+
+### Practice Task 1: Database Setup
+
+- Created `setup_database.py` to define the database schema for recipes using SQLAlchemy's ORM.
+- Resolved issues related to MySQL server permissions and configuration.
+
+### Practice Task 2: Recipe Creation
+
+- Created `create_recipe.py` to allow users to add new recipes to the database.
+- Implemented input validation to ensure data consistency.
+
+### Practice Task 3: Recipe Search and Management
+
+- Created `search_recipe.py` to search for recipes by ingredients and perform updates or deletions.
+- Updated the code to use SQLAlchemy 2.0 recommended practices, such as `Session.get()` for fetching records.
+
+### Main Task: Recipe Manager Application
+
+- Developed `recipe_manager.py`, a complete command-line application to manage recipes.
+- Included features to create, view, update, and delete recipes, incorporating robust error handling and user input validation.
+
+## Challenges and Solutions
+
+### Issue: MySQL Server Not Starting
+
+- **Solution**: Corrected file permissions and ensured MySQL configuration was accurate.
+
+### Issue: ModuleNotFoundError
+
+- **Solution**: Ensured the `setup_database.py` script was correctly referenced in all related scripts.
+
+### Issue: SQLAlchemy Deprecation Warnings
+
+- **Solution**: Updated code to follow the latest SQLAlchemy guidelines, ensuring future compatibility.
