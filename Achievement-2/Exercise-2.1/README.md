@@ -45,3 +45,76 @@ pip install django
 
 Check Django version:
 django-admin --version
+
+---
+
+## Overview
+
+This achievement focuses on developing a web application using the Django framework. In this exercise, we set up the structure for a Django project and explored the difference between Django projects and apps. The exercise also involved running the Django development server, creating a superuser, and understanding the project’s basic structure.
+
+## Exercise 2.2: Django Project Set Up
+
+### Files
+
+- **proj_contents_before_renaming.jpg**: Screenshot of the project structure before renaming the project directory.
+- **proj_contents_after_renaming.jpg**: Screenshot of the project structure after renaming the project directory.
+- **django_server_success.jpg**: Screenshot of the Django server running successfully on localhost.
+- **admin-dashboard.jpg**: Screenshot of the Django admin dashboard showing the superuser.
+
+### Steps
+
+#### Project Structure Setup:
+
+- **Created Project Directory**: Created a folder named `A2_Recipe_App`.
+- **Virtual Environment**: Created and activated a virtual environment named `a2-ve-recipeapp`.
+- **Installed Django**: Installed Django 4.2.15 in the virtual environment.
+- **Created Django Project**: Initialized the Django project named `recipe_project`.
+- **Renamed Project Directory**: Renamed the `recipe_project` directory to `src`.
+- **Ran Migrations**: Applied migrations to set up the initial database schema.
+
+#### Django Development Server:
+
+- **Run Server**: Started the Django development server and confirmed it was running on `http://127.0.0.1:8000/`.
+
+#### Superuser Creation:
+
+- **Created Superuser**: Created a superuser for accessing the Django admin interface.
+
+### How to Run
+
+#### Start the Django Development Server:
+
+1. **Activate the Virtual Environment**:
+
+   workon a2-ve-recipeapp
+
+2. **Navigate to the `src` Directory**:
+
+   cd ~/path/to/your/A2_Recipe_App/src
+
+3. **Run Migrations**:
+
+   python manage.py migrate
+
+4. **Start the Server**:
+
+   python manage.py runserver
+
+#### Deactivating the Virtual Environment:
+
+deactivate
+
+Virtual Environment Setup
+To set up the virtual environment and install required packages, follow these steps:
+
+Create a virtual environment:
+mkvirtualenv a2-ve-recipeapp
+
+Activate the virtual environment:
+workon a2-ve-recipeapp
+
+Install Django:
+pip install django
+
+Check Django version:
+django-admin --version
