@@ -118,3 +118,76 @@ pip install django
 
 Check Django version:
 django-admin --version
+
+---
+
+Exercise 2.3: Creating and Managing Django Apps
+
+Files
+recipe_app_screenshot.png: Screenshot of the Django admin interface showing the Recipe, Ingredient, and Category models.
+Steps
+App Creation:
+
+Recipes App:
+Created the recipes app to manage recipe data.
+Defined the Recipe model with fields for the recipe's name, description, and related ingredients and categories.
+Ingredients App:
+Created the ingredients app to manage individual ingredients.
+Defined the Ingredient model with fields for the ingredient's name and quantity.
+Categories App:
+Created the categories app to categorize recipes.
+Defined the Category model with a name field.
+Setting Up Relationships:
+
+Established a ManyToManyField relationship between Recipe and Ingredient in the recipes app to allow a recipe to include multiple ingredients.
+Linked Recipe to Category using a ForeignKey in the recipes app to categorize recipes.
+Admin Interface:
+
+Registered the Recipe, Ingredient, and Category models in the Django admin site.
+Customized the admin interface to display and manage the models effectively.
+Migrations and Testing:
+
+Ran makemigrations and migrate to apply the database schema changes.
+Created a superuser and used the admin interface to add sample data for recipes, ingredients, and categories.
+Verified the correct setup by running the Django tests and interacting with the admin panel.
+
+How to Run
+
+Activate the Virtual Environment:
+workon a2-ve-recipeapp
+
+Navigate to the src Directory:
+cd ~/path/to/your/A2_Recipe_App/src
+
+Run Migrations:
+python manage.py makemigrations
+python manage.py migrate
+
+Create a Superuser:
+python manage.py createsuperuser
+
+Start the Server:
+python manage.py runserver
+Access the Django Admin Interface:
+Navigate to http://127.0.0.1:8000/admin/ and log in with the superuser credentials.
+
+Add Sample Data:
+Use the admin interface to add categories, ingredients, and recipes.
+
+Deactivating the Virtual Environment:
+deactivate
+
+Virtual Environment Setup
+To set up the virtual environment and install required packages, follow these steps:
+
+Create a virtual environment:
+mkvirtualenv a2-ve-recipeapp
+
+Activate the virtual environment:
+workon a2-ve-recipeapp
+
+Install Django:
+pip install django
+
+Check Django version:
+django-admin --version
