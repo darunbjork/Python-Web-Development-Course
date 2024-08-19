@@ -191,3 +191,57 @@ pip install django
 
 Check Django version:
 django-admin --version
+
+---
+
+## Exercise 2.4: Django Views and Templates
+
+### Overview
+
+This exercise focused on creating views and templates in Django to render HTML content dynamically. The primary objective was to set up a custom homepage for the recipe application by defining a view, creating a corresponding template, and mapping a URL to the view.
+
+### Files
+
+- `views.py`: Contains the `home` view responsible for rendering the homepage.
+- `recipes_home.html`: The template file that defines the structure of the homepage.
+- `urls.py`: Maps the root URL to the `home` view.
+
+### Steps
+
+#### 1. View Creation:
+
+- Defined the `home` view in the `recipes` app to render the homepage.
+
+#### 2. Template Creation:
+
+- Created the `recipes_home.html` file under `recipes/templates/recipes/` to hold the HTML content for the homepage.
+
+#### 3. URL Mapping:
+
+- Configured `urls.py` in the `recipes` app to map the root URL to the `home` view.
+- Updated the main project’s `urls.py` to include the `recipes` app’s URLs.
+
+#### 4. Running the Server:
+
+- Started the Django development server and accessed the homepage at `http://127.0.0.1:8000/`.
+
+### How to Run
+
+#### 1. Start the Django Development Server:
+
+- Activate the Virtual Environment: `workon a2-ve-recipeapp`
+- Navigate to the `src` Directory: `cd ~/path/to/your/A2_Recipe_App/src`
+- Run the Server: `python manage.py runserver`
+
+#### 2. Access the Homepage:
+
+- Open your web browser and navigate to `http://127.0.0.1:8000/`.
+
+#### 3. Deactivating the Virtual Environment:
+
+- `deactivate`
+
+### Future Improvements
+
+- Implement additional views and templates for other parts of the application.
+- Enhance the homepage with more advanced HTML and CSS, and consider adding dynamic content from the database.

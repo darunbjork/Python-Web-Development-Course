@@ -130,3 +130,52 @@ Future Improvements
 Views and Templates: Plan to create views and templates to display recipes, ingredients, and categories on the website.
 User Interaction: Explore creating forms to allow users to submit recipes directly through the website.
 API Development: Consider exposing the data through a RESTful API using Django REST Framework for potential mobile app integration.
+
+---
+
+## Exercise 2.4: Django Views and Templates
+
+### Observations
+
+- Successfully created a custom view for the homepage in the `recipes` app.
+- Implemented a template to display the homepage content.
+- Mapped the view to a URL and verified its accessibility.
+- Gained experience in organizing Django templates and linking them to views.
+
+### Challenges
+
+- Challenge: Understanding the correct structure for templates and views in Django.
+- Solution: Reviewed the Django documentation and followed best practices for structuring the `views.py` and `templates` directories.
+
+### What I've Learned
+
+- Views and Templates: Learned how to create views and corresponding templates to render HTML content in Django.
+- URL Routing: Gained an understanding of how to map views to URLs using Django's `urls.py`.
+- Project Organization: Improved my ability to organize project files, specifically views and templates.
+
+### Detailed Steps
+
+#### View Creation:
+
+- Created the `home` view in `recipes/views.py` to render the homepage template.
+- Utilized Django’s `render` function to link the view to the `recipes_home.html` template.
+
+#### Template Setup:
+
+- Created a directory structure `recipes/templates/recipes/`.
+- Added an HTML file `recipes_home.html` containing the basic structure for the homepage.
+
+#### URL Mapping:
+
+- Created `urls.py` in the `recipes` app and mapped the root URL to the `home` view.
+- Updated the main project’s `urls.py` to include the URLs from the `recipes` app.
+
+#### Testing and Verification:
+
+- Ran the Django development server and verified the homepage display.
+- Took a screenshot of the rendered homepage.
+
+### Future Improvements
+
+- Enhanced Styling: Plan to enhance the styling of the homepage using CSS.
+- Dynamic Content: Explore displaying dynamic content from the database on the homepage.
