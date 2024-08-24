@@ -26,3 +26,9 @@ __pycache__/
 # Ignore log files
 *.log
 
+
+# Ignore database
+*.sqlite3
+
+# Ignore backup files
+*.bak
