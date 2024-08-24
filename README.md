@@ -69,3 +69,69 @@ Admin interface: http://127.0.0.1:8000/admin/
 Conclusion
 
 This project showcases the step-by-step development of a Django web application, covering everything from initial setup to creating models, writing tests, and populating the database with sample data. The resulting application allows users to manage recipes and their ingredients in a user-friendly interface.
+
+---
+
+# Recipe Application - Exercise 2.4: Django Views and Templates
+
+## Overview
+
+This exercise focuses on implementing the views and templates in the Recipe Application using Django. We aim to create a welcoming homepage that enhances the user interface and links to different functionalities within the application.
+
+## Learning Goals
+
+- Summarize the process of creating views, templates, and URLs.
+- Explain how the "V" and "T" parts of MVT architecture work.
+- Create a frontend page for your web application.
+
+## Key Features
+
+1. **Custom Welcome Page**:
+
+   - Created a custom welcome page using Django's views and templates.
+   - The homepage displays a greeting message and sets the foundation for further enhancements.
+
+2. **Templates and Static Files**:
+
+   - Organized the templates and static files within the app structure.
+   - Implemented CSS styling to enhance the appearance of the homepage.
+
+3. **Mapping URLs to Views**:
+   - Linked the view to the corresponding URL pattern, allowing users to access the homepage by visiting the root URL.
+
+## Instructions
+
+1. **Setup the Project**:
+
+   - Ensure that the virtual environment is active.
+   - Navigate to the project directory.
+
+2. **Create the View**:
+
+   - Define the view function in the `views.py` file under the `recipes` app.
+   - This view will render the `home.html` template.
+
+3. **Create the Template**:
+
+   - Create a `templates` folder within the `recipes` app directory.
+   - Within `templates/recipes`, create the `home.html` file.
+   - Add HTML and CSS content to create a welcoming design.
+
+4. **Map the View to a URL**:
+
+   - Create a `urls.py` file in the `recipes` app.
+   - Define the URL pattern to map the view to the root URL.
+
+5. **Run the Server**:
+   - Start the Django development server and verify the changes by visiting `http://127.0.0.1:8000/`.
+
+## File Structure
+
+- `src/recipes/views.py`: Contains the view logic for the homepage.
+- `src/recipes/urls.py`: Maps the view to the URL.
+- `src/recipes/templates/recipes/home.html`: Template file for the homepage.
+- `src/recipes/static/recipes/styles.css`: Stylesheet for the homepage.
+
+## Conclusion
+
+Exercise 2.4 is a crucial step in enhancing the user interface of the Recipe Application. By creating a custom homepage, we provide users with a more engaging and visually appealing entry point into the application. The skills learned here will be applied and expanded upon in future exercises, as we continue to develop the front end of the application.
