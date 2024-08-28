@@ -129,3 +129,32 @@ The objective of Exercise 2.4 is to implement views and templates in the Recipe 
 ### Reflection
 
 This exercise was a valuable experience in understanding the importance of views and templates in Django. It highlighted the need for careful organization of files and thoughtful design of URLs to create a seamless user experience. I feel more confident in working with Django's front-end components and look forward to expanding these skills in the upcoming exercises.
+
+---
+
+Journal for Exercise 2.5: Django MVT Revisited
+
+Objective
+The objective of this exercise was to revisit the Django MVT (Model-View-Template) architecture by refining the front-end components of the Recipe Application, specifically focusing on enhancing the user experience through better-designed views and templates.
+
+Key Tasks Completed
+Refined Recipe List View:
+Improved the layout of the recipe list to display images fully and consistently using a grid layout.
+Updated the CSS to ensure the images are displayed without cropping, maintaining a uniform appearance.
+Enhanced Recipe Detail View:
+Modified the image display in the recipe detail page to ensure it is appropriately sized and centered, improving the overall aesthetic of the page.
+User Interface Improvements:
+Applied modern CSS techniques to enhance the visual appeal of the application, focusing on consistency and responsiveness.
+Updated the button styles, headers, and text alignment to create a cohesive look and feel across the application.
+Challenges
+Image Handling: Ensuring that images in the recipe list were displayed fully without being cropped required careful adjustment of the object-fit and sizing properties in CSS.
+Consistency Across Views: Maintaining a consistent look across different pages while adapting to different content types was a bit challenging, but thorough testing helped achieve the desired result.
+Solutions
+CSS Adjustments: By using object-fit: contain; and setting a fixed height for images in the recipe list, I ensured that all images are displayed fully and consistently across different screen sizes.
+Layout Refinement: Implemented a grid-based layout for the recipe list, which allowed for a more flexible and visually appealing arrangement of content.
+Next Steps
+User Authentication: Implement user authentication to restrict access to certain parts of the application.
+CRUD Operations: Expand the functionality to allow users to create, update, and delete recipes directly from the frontend.
+Testing: Write additional tests to cover new functionality and ensure robustness as the application grows.
+Reflection
+This exercise was instrumental in solidifying my understanding of Django's MVT architecture and its practical application in building web applications. By revisiting the views and templates, I was able to significantly improve the user experience, which is crucial for any web application. The process also highlighted the importance of consistent styling and responsive design in delivering a polished product.

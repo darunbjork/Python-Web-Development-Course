@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'recipes/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Recipe List</h2>
+        <ul class="recipe-list">
+            {% for recipe in recipes %}
+                <li>
+                    <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
+                    <div>
+                        <h3>{{ recipe.title }}</h3>
+                        <p>{{ recipe.description|truncatewords:20 }}</p>
+                        <a href="{% url 'recipe_detail' recipe.id %}">View Recipe</a>
+                    </div>
+                </li>
+            {% empty %}
+                <li>No recipes available.</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'home' %}"  class="button">Back to Home</a>
+    </div>
+</body>
+</html>

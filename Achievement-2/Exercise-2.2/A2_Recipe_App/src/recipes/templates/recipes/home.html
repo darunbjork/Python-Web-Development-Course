@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes Home</title>
-    <!-- Load the static template tag -->
+    <title>Welcome to Our Recipe Collection</title>
     {% load static %}
-    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="{% static 'recipes/styles.css' %}">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Our Recipe Collection</h1>
         <p>Explore our collection of recipes and find your next favorite dish!</p>
-        <a href="/recipes/">Explore Recipes</a>
+        <a href="{% url 'recipes_home' %}" class="button">Explore Recipes</a>
     </div>
 </body>
 </html>

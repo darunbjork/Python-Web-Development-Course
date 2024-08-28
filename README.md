@@ -7,6 +7,7 @@ This project is a Django-based web application that allows users to create, read
 Exercises
 
 Exercise 2.1: Getting Started with Django
+
 In this exercise, we set up the development environment for the project. The main tasks included:
 
 Creating a Virtual Environment: A virtual environment was created to isolate the project's dependencies.
@@ -17,7 +18,11 @@ Files Created:
 
 web-dev-a2: The virtual environment directory.
 recipe_project: The Django project directory.
+
+---
+
 Exercise 2.2: Django Project Setup
+
 This exercise focused on setting up the initial Django project structure and creating the necessary apps. Key tasks included:
 
 Creating Django Apps: Three Django apps (recipes, ingredients, and users) were created to handle different parts of the application.
@@ -29,7 +34,11 @@ Files Modified:
 recipe_project/settings.py: Updated to include the new apps.
 recipes/models.py, ingredients/models.py, users/models.py: Models for the respective apps were defined.
 recipes/admin.py: Customized to include inline management of ingredients.
+
+---
+
 Exercise 2.3: Django Models
+
 In this exercise, we focused on building and refining the models and database schema for the application. Key tasks included:
 
 Creating Database Blueprints: A blueprint was created for the application's database structure, identifying the entities and their relationships.
@@ -135,3 +144,83 @@ This exercise focuses on implementing the views and templates in the Recipe Appl
 ## Conclusion
 
 Exercise 2.4 is a crucial step in enhancing the user interface of the Recipe Application. By creating a custom homepage, we provide users with a more engaging and visually appealing entry point into the application. The skills learned here will be applied and expanded upon in future exercises, as we continue to develop the front end of the application.
+
+---
+
+# Recipe Application - Django Project
+
+## Overview
+
+This project is a Django-based web application that allows users to create, read, update, and delete recipes. The application is built as part of a series of exercises aimed at developing and deploying a fully functional web application. Each exercise builds on the previous one, gradually introducing more features and complexity.
+
+## Features
+
+- **Recipe Management**: Users can add, view, update, and delete recipes.
+- **Ingredient Tracking**: Each recipe can have multiple ingredients, managed through the admin interface.
+- **User Management**: Basic user authentication and profile management.
+
+## Setup
+
+### Prerequisites
+
+- Python 3.x
+- Virtualenv
+- Django 3.x
+
+### Installation
+
+1. **Clone the repository**:
+   git clone https://github.com/your-username/recipe-app.git
+
+   cd recipe-app
+   Create and activate a virtual environment:
+   python3 -m venv web-dev-a2
+
+source web-dev-a2/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+Apply migrations:
+python manage.py migrate
+
+Run the development server:
+python manage.py runserver
+Access the application at http://127.0.0.1:8000/.
+
+Usage
+Accessing the Admin Interface
+
+Create a superuser (if you haven't already):
+
+python manage.py createsuperuser
+
+Access the admin interface:
+
+Visit http://127.0.0.1:8000/admin/ and log in with the superuser credentials.
+
+Adding Recipes
+Navigate to the admin interface to add recipes and ingredients.
+You can also use the frontend to create and manage recipes once the user interface is fully implemented.
+
+Project Structure
+recipe-app/
+├── src/
+│ ├── recipes/
+│ │ ├── migrations/
+│ │ ├── static/
+│ │ │ └── recipes/
+│ │ │ └── styles.css
+│ │ ├── templates/
+│ │ │ └── recipes/
+│ │ │ ├── home.html
+│ │ │ ├── recipe_list.html
+│ │ │ └── recipe_detail.html
+│ │ ├── views.py
+│ │ └── urls.py
+│ └── manage.py
+└── web-dev-a2/
+
+Acknowledgements:
+Django Documentation - For providing comprehensive resources on Django development.
+Bootstrap - Used in some templates for responsive design elements.
