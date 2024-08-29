@@ -13,3 +13,4 @@ class RecipeAdmin(admin.ModelAdmin):
     list_display = ('title', 'cooking_time', 'difficulty', 'category')
     search_fields = ('title', 'description')
     list_filter = ('category', 'difficulty', 'cooking_time')
+
