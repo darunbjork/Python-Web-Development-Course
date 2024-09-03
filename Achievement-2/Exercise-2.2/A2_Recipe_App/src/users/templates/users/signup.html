@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'users/styles.css' %}">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        {% if form.errors %}
+            <div class="popup-message">
+                Please correct the errors below.
+            </div>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {% if field.help_text %}
+                        <small class="form-text">{{ field.help_text }}</small>
+                    {% endif %}
+                    {% if field.errors %}
+                        <div class="popup-message">
+                            {{ field.errors|escape }}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}" class="link-style">Log in here</a></p>
+    </div>
+</body>
+</html>
