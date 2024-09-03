@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ recipe.title }}</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'recipes/styles.css' %}">
-</head>
-<body>
+{% extends 'recipes/base.html' %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block content %}
     <div class="container recipe-detail">
         <h1>{{ recipe.title }}</h1>
         <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
@@ -28,5 +23,4 @@
         <p><strong>Category:</strong> {{ recipe.category }}</p>
         <a href="{% url 'recipes_home' %}" class="button">Back to Recipe List</a>
     </div>
-</body>
-</html>
+{% endblock %}

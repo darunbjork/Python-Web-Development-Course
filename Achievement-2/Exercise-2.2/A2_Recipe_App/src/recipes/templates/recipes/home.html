@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Recipe Collection</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'recipes/styles.css' %}">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to Our Recipe Collection</h1>
-        <p>Explore our collection of recipes and find your next favorite dish!</p>
-        <a href="{% url 'recipes_home' %}" class="button">Explore Recipes</a>
-    </div>
-</body>
-</html>
+{% extends 'recipes/base.html' %}
+
+{% block title %}Welcome to Our Recipe Collection{% endblock %}
+
+{% block content %}
+    <h1>Welcome to Our Recipe Collection</h1>
+    <p>Explore our collection of recipes and find your next favorite dish!</p>
+    <a href="{% url 'recipes_home' %}" class="button">Explore Recipes</a>
+{% endblock %}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Recipe App{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'recipes/styles.css' %}">
+    
+    <style>
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #2c3e50; /* Dark background color */
+            padding: 10px 0; /* Padding for the navbar */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            position: relative; /* Fix the navbar at the top */
+            width: 100%; /* Ensure the navbar spans the full width */
+            z-index: 1000; /* Ensure the navbar is above other content */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Display list items in a row */
+            justify-content: center; /* Center the navbar items */
+            align-items: center; /* Center the content vertically */
+        }
+
+        .navbar ul li {
+            margin: 0 20px; /* Spacing between navbar items */
+        }
+
+        .navbar ul li a {
+            color: white; /* Text color for links */
+            font-size: 18px; /* Increase font size for readability */
+            text-decoration: none; /* Remove underline from links */
+            padding: 10px 20px; /* Padding around the links */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+            border-radius: 4px; /* Round the corners of the link background */
+        }
+
+        .navbar ul li a:hover {
+            background-color: #1abc9c; /* Change background on hover */
+            color: white; /* Keep text color white on hover */
+        }
+
+        /* Adjust the content margin to avoid overlap with the fixed navbar */
+        .container {
+            margin-top: 80px; /* Adjust based on the height of your navbar */
+        }
+
+        /* Responsive Design: Stack items vertically on smaller screens */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0; /* Adjust margin for stacked items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'recipes_home' %}">Recipes</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
