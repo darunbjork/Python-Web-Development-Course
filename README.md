@@ -224,3 +224,16 @@ recipe-app/
 Acknowledgements:
 Django Documentation - For providing comprehensive resources on Django development.
 Bootstrap - Used in some templates for responsive design elements.
+
+---
+
+Key Exercises
+
+Exercise 2.6: User Authentication and Navigation Bar
+Implemented user authentication (login, signup, logout).
+Added a dynamic navigation bar that changes based on user authentication status.
+Created custom views and templates for login and signup.
+Acknowledgments
+
+Django Documentation
+Bootstrap (for frontend design inspiration)

@@ -158,3 +158,38 @@ CRUD Operations: Expand the functionality to allow users to create, update, and 
 Testing: Write additional tests to cover new functionality and ensure robustness as the application grows.
 Reflection
 This exercise was instrumental in solidifying my understanding of Django's MVT architecture and its practical application in building web applications. By revisiting the views and templates, I was able to significantly improve the user experience, which is crucial for any web application. The process also highlighted the importance of consistent styling and responsive design in delivering a polished product.
+
+---
+
+Exercise 2.6: User Authentication in Django
+
+Objective
+The goal of Exercise 2.6 was to implement user authentication and a navigation bar that dynamically adapts based on whether a user is logged in or not. This involved creating custom forms for login and signup, as well as refining the user interface.
+
+What I Learned
+User Authentication:
+Implementing Django’s built-in authentication features using custom forms for login and signup.
+Learned to use AuthenticationForm and LoginRequiredMixin to control access.
+
+Template Inheritance:
+How to use base.html to serve as a master template for all pages.
+Extended other templates like home.html and recipe_list.html to include the navigation bar.
+
+Navigation Bar:
+Dynamically displayed links such as Login, Signup, and Logout depending on user authentication status.
+
+Form Validation:
+Implemented form validation for the signup form, ensuring that passwords match and follow best practices.
+Challenges
+
+Handling Authentication:
+Understanding how Django’s authentication system works, especially the flow of login and logout.
+
+Navbar Integration:
+Ensuring the navigation bar is visible on all pages and changes dynamically based on the user’s login state.
+Accomplishments
+Successfully implemented user authentication with a dynamic navigation bar.
+Improved the user experience by providing clear and consistent navigation options.
+
+Reflection
+This exercise solidified my understanding of how Django handles user authentication. Creating a cohesive navigation system that reflects the user's login state is crucial for user experience, and I feel more confident in designing such systems.
