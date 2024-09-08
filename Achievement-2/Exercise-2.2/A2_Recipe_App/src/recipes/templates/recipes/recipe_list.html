@@ -3,20 +3,43 @@
 {% block title %}Recipes List{% endblock %}
 
 {% block content %}
-    <h2>Recipe List</h2>
-    <ul class="recipe-list">
-        {% for recipe in recipes %}
-            <li>
-                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
-                <div>
-                    <h3>{{ recipe.title }}</h3>
-                    <p>{{ recipe.description|truncatewords:20 }}</p>
-                    <a href="{% url 'recipe_detail' recipe.id %}">View Recipe</a>
-                </div>
-            </li>
-        {% empty %}
-            <li>No recipes available.</li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'home' %}" class="button">Back to Home</a>
+    <div class="search-container">
+        <h2>Recipe List</h2>
+
+        <!-- Search form -->
+        <form method="post" class="search-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+        <!-- Display chart if available -->
+        {% if chart %}
+            <div class="chart-container">
+                <img src="data:image/png;base64,{{ chart }}" alt="Chart" class="chart-image">
+            </div>
+        {% endif %}
+
+        <!-- Recipes List -->
+        <div class="recipe-list-container">
+            <ul class="recipe-list">
+                {% for recipe in recipes %}
+                    <li>
+                        <div class="recipe-card">
+                            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="recipe-image">
+                            <div class="recipe-info">
+                                <h3>{{ recipe.title }}</h3>
+                                <p>{{ recipe.description|truncatewords:20 }}</p>
+                                <a href="{% url 'recipe_detail' recipe.id %}" class="view-recipe-button">View Recipe</a>
+                            </div>
+                        </div>
+                    </li>
+                {% empty %}
+                    <li>No recipes available.</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a href="{% url 'home' %}" class="button">Back to Home</a>
+    </div>
 {% endblock %}

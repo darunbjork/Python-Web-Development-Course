@@ -133,8 +133,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static", 
-    BASE_DIR / "users/static",
+    os.path.join(BASE_DIR, 'recipes', 'static'),  # static files from the recipes app
+    os.path.join(BASE_DIR, 'users', 'static'),    # static files from the users app
 ]
 
 # Default primary key field type
