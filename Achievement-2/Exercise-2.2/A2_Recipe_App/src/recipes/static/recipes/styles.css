@@ -61,6 +61,22 @@ h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Consistent Styling for Search and Reset Buttons */
+.search-button, .reset-button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.search-button:hover, .reset-button:hover {
+  background-color: #16a085;
+}
+
 /* Recipe List Styles */
 .recipe-list {
   display: grid;
@@ -143,7 +159,6 @@ h3 {
   text-align: center; 
 }
 
-
 /* Footer Styles */
 footer {
   text-align: center;
@@ -168,8 +183,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-
 
 /* Container for search form */
 .search-container {
@@ -197,20 +210,6 @@ footer a:hover {
   width: 100%;
 }
 
-.search-button {
-  background-color: #1abc9c;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-  background-color: #16a085;
-}
-
 /* Chart Container */
 .chart-container {
   text-align: center;
@@ -221,6 +220,3 @@ footer a:hover {
   max-width: 100%;
   height: auto;
 }
-
-
-
