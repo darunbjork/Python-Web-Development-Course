@@ -149,3 +149,30 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/users/login/'
 LOGIN_URL = '/users/login/'
+
+
+
+import django_heroku
+import dj_database_url
+import os
+
+# Configure the app for Heroku
+django_heroku.settings(locals())
+
+# Add this for database configuration
+DATABASES = {
+    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+}
+
+# Set static file storage and whitenoise
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Simplify static file handling with WhiteNoise
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
+
+# Enable DEBUG mode in development
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key')
+ALLOWED_HOSTS = ['recipes-hub.herokuapp.com', 'localhost']
