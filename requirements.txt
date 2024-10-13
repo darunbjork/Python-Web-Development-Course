@@ -2,7 +2,7 @@ asgiref==3.8.1
 contourpy==1.1.1
 cycler==0.12.1
 dj-database-url==2.2.0
-Django==4.2.15
+Django==4.2.16
 django-heroku==0.3.1
 fonttools==4.53.1
 gunicorn==23.0.0
