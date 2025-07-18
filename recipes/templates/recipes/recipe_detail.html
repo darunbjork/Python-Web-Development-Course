@@ -1,0 +1,28 @@
+{% extends 'recipes/base.html' %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block content %}
+    <div class="container recipe-detail">
+        <h1>{{ recipe.title }}</h1>
+        <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}">
+        <p>{{ recipe.description }}</p>
+        
+        <h3>Ingredients:</h3>
+        <ul>
+            {% for ingredient in recipe.ingredients.all %}
+                <li>{{ ingredient.quantity }} - {{ ingredient.name }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Instructions:</h3>
+        <p>{{ recipe.instructions }}</p>
+        
+        <p><strong>Cooking time:</strong> {{ recipe.cooking_time }} minutes</p>
+        <p><strong>Difficulty:</strong> {{ recipe.difficulty }}</p>
+        <p><strong>Category:</strong> {{ recipe.category }}</p>
+
+        <!-- Back to Recipe List with search parameters -->
+        <a href="{% url 'recipes_home' %}?{{ request.GET.urlencode }}" class="button">Back to Recipe List</a>
+    </div>
+{% endblock %}
