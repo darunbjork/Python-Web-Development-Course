@@ -1,0 +1,5 @@
+{
+  "python.analysis.extraPaths": [
+    "./Achievement-1/Exercise-1.7/Practice-Task-1"
+  ]
+}

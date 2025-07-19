@@ -1,0 +1,9 @@
+{% extends 'recipes/base.html' %}
+
+{% block title %}Welcome to Our Recipe Collection{% endblock %}
+
+{% block content %}
+    <h1>Welcome to Our Recipe Collection</h1>
+    <p>Explore our collection of recipes and find your next favorite dish!</p>
+    <a href="{% url 'recipes_home' %}" class="button">Explore Recipes</a>
+{% endblock %}

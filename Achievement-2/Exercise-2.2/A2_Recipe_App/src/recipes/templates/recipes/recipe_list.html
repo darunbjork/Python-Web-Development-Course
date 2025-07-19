@@ -1,0 +1,49 @@
+{% extends 'recipes/base.html' %}
+
+{% block title %}Recipes List{% endblock %}
+
+{% block content %}
+    <div class="search-container">
+        <h2>Recipe List</h2>
+
+        <!-- Search form -->
+        <form method="GET" class="search-form">  <!-- Use GET method for search -->
+            {{ form.as_p }}
+            <button type="submit" class="button">Search</button>
+        </form>
+
+        <!-- Button to show all recipes -->
+        <form method="GET" class="reset-form">  <!-- Use GET method for showing all recipes -->
+            <button type="submit" name="show_all" value="1" class="button">Show All Recipes</button>
+        </form>
+
+        <!-- Display chart if available -->
+        {% if chart %}
+            <div class="chart-container">
+                <img src="data:image/png;base64,{{ chart }}" alt="Chart" class="chart-image">
+            </div>
+        {% endif %}
+
+        <!-- Recipes List -->
+        <div class="recipe-list-container">
+            <ul class="recipe-list">
+                {% for recipe in recipes %}
+                    <li>
+                        <div class="recipe-card">
+                            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="recipe-image">
+                            <div class="recipe-info">
+                                <h3>{{ recipe.title }}</h3>
+                                <p>{{ recipe.description|truncatewords:20 }}</p>
+                                <a href="{% url 'recipe_detail' recipe.id %}?{{ request.GET.urlencode }}" class="view-recipe-button">View Recipe</a>
+                            </div>
+                        </div>
+                    </li>
+                {% empty %}
+                    <li>No recipes available.</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a href="{% url 'home' %}" class="button">Back to Home</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+A2_Recipe_App/
+
+# Ignore virtual environment
+a2-ve-recipeapp/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Django migration files
+*/migrations/
+
+# Ignore environment variables file
+.env
+
+# Ignore database
+*.sqlite3
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore bytecode files
+*.pyc
+
+# Ignore log files
+*.log
+
+
+# Ignore database
+*.sqlite3
+
+# Ignore backup files
+*.bak
